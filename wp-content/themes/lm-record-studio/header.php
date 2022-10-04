@@ -6,12 +6,12 @@
 
 
     <title><?php if (is_category()) {
-                echo 'Category Archive for &quot;';
+                echo 'Category Archive -';
                 single_cat_title();
                 echo '&quot; | ';
                 bloginfo('name');
             } elseif (is_tag()) {
-                echo 'Tag Archive for &quot;';
+                echo 'Tag Archive -';
                 single_tag_title();
                 echo '&quot; | ';
                 bloginfo('name');
@@ -20,7 +20,7 @@
                 echo ' Archive | ';
                 bloginfo('name');
             } elseif (is_search()) {
-                echo 'Search for &quot;' . wp_specialchars($s) . '&quot; | ';
+                echo 'Search -' . wp_specialchars($s) . '&quot; | ';
                 bloginfo('name');
             } elseif (is_home()) {
                 bloginfo('name');
