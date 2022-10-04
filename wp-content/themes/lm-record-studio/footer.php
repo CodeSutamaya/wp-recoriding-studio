@@ -21,29 +21,29 @@
                     global $save_active_youtube, $save_youtube;
                     if ($save_active_facebook == 'on') {
                     ?>
-                        <a href="<?php echo $save_facebook; ?>" class="sm-link">
+                        <a style='text-decoration:none;' href="<?php echo $save_facebook; ?>" class="sm-link">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/fb.png" alt="" style="width: 100%;" />
                         </a><br />
                     <?php
                     }
                     if ($save_active_twitter == 'on') {
                     ?>
-                        <a href="<?php echo $save_twitter; ?>" class="sm-link">
+                        <a style='text-decoration:none;' href="<?php echo $save_twitter; ?>" class="sm-link">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/twit.png" alt="" style="width: 100%;" />
                         </a> <br />
                     <?php
                     }
-                    if ($save_active_gplus == 'on') {
+                    if ($save_active_youtube == 'on') {
                     ?>
-                        <a href="<?php echo $save_gplus; ?>" class="sm-link">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/gplus.png" alt="" style="width: 100%;" />
+                        <a style='text-decoration:none;' href="<?php echo $save_youtube; ?>" class="sm-link">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/youtube.png" alt="" style="width: 100%;" />
                         </a><br />
                     <?php
                     }
-                    if ($save_active_youtube == 'on') {
+                    if ($save_active_gplus == 'on') {
                     ?>
-                        <a href="<?php echo $save_youtube; ?>" class="sm-link">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/youtube.png" alt="" style="width: 100%;" />
+                        <a style='text-decoration:none;' href="<?php echo $save_gplus; ?>" class="sm-link">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dimages/gplus.png" alt="" style="width: 100%;" />
                         </a><br />
                     <?php
                     }
