@@ -2,24 +2,6 @@
 
 <div id='cw' class="site-width">
 
-
-    <div class="hp-article">
-
-        <h1 class="page-title">
-            <?php echocs('save_content_text1'); ?> - <span><?php echocs('save_content_text2'); ?></span>
-        </h1>
-
-        <div class="hp-article-text">
-            <?php echocs('save_content_desc'); ?>
-        </div>
-
-        <div class="page-title-desc">
-            <?php echocs('save_content_text3'); ?>
-        </div>
-
-    </div>
-
-
     <div class="banner" style="background-image: url('<?php echocs('save_banner_image'); ?>');">
 
         <div class="banner-info left">
@@ -56,6 +38,7 @@
         <div class="clear"></div>
 
     </div>
+
 
     <div class="hp-gallery">
 
@@ -114,6 +97,24 @@
             ?>
 
 
+        </div>
+
+    </div>
+
+
+
+    <div class="hp-article">
+
+        <h1 class="page-title border">
+            <?php echocs('save_content_text1'); ?> - <span><?php echocs('save_content_text2'); ?></span>
+        </h1>
+
+        <div class="hp-article-text border">
+            <?php echocs('save_content_desc'); ?>
+        </div>
+
+        <div class="page-title-desc border">
+            <?php echocs('save_content_text3'); ?>
         </div>
 
     </div>
