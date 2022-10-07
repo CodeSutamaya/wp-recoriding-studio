@@ -40,6 +40,65 @@
                 echo ' | ';
                 bloginfo('name');
             } ?></title>
+    <?php
+    global $tipe, $tipe_atas;
+
+    if (is_home()) {                  //termasuk halaman front_page
+        $tipe = "home";
+        $tipe_atas = "indexz.php";
+    } //else if(is_front_page()){       //termasuk halaman page (x kemungkinan salah x)    }
+    else if (is_page()) {
+        $arr_dmeta = arr_meta_post("_meta_page");
+
+        //    echo "<pre>";
+        //    print_r($arr_dmeta);
+        //    echo "</pre>";
+
+        foreach ($arr_dmeta as $index => $value) {
+            global ${$index};
+            ${$index} = $value;
+        }
+        $tipe = $save_jenis_design;
+
+        if ($tipe == "produk") {
+            if (isset($_REQUEST['jenis'])) {
+                $get_jenis = $_REQUEST['jenis'];
+                if ($get_jenis == "produk-bread") $tipe = "produk-bread";
+                else if ($get_jenis == "produk-cake") $tipe = "produk-cake";
+                else if ($get_jenis == "produk-other") $tipe = "produk-other";
+                else $tipe = "produk";
+            }
+        }
+
+        $tipe_atas = "page.php";
+    } else if (is_category()) {         //termasuk halaman archive
+        $tipe = "category";
+        $tipe_atas = "category.php";
+    } else if (is_tag()) {              //termasuk halaman archive
+        $tipe = "tag";
+        $tipe_atas = "tag.php";
+    } else if (is_author()) {           //termasuk halaman archive
+        $tipe = "author";
+        $tipe_atas = "author.php";
+    } else if (is_archive()) {
+        $tipe = "archive";
+        $tipe_atas = "archive.php";
+    } else if (is_search()) {
+        $tipe = "search";
+        $tipe_atas = "search.php";
+    } else if (is_404()) {
+        $tipe = "404";
+        $tipe_atas = "404.php";
+    } else if (is_single()) {
+        $post_type = get_post_type($post_id);
+        if ($post_type == 'event') $tipe = 'single-event';
+        if ($post_type == 'roti') $tipe = 'single-bread';
+        if ($post_type == 'cake') $tipe = 'single-cake';
+        if ($post_type == 'other') $tipe = 'single-other';
+
+        $tipe_atas = "single.php";
+    }
+    ?>
 
     <?php wp_head(); ?>
 
