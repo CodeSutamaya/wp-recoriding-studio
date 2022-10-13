@@ -18,4 +18,19 @@
     </button>
     </div>
 
+    <div class="h-64 w-44 overflow-hidden rounded-lg">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="" class="h-full w-full object-cover object-center">
+    </div>
+    <div class="h-64 w-44 overflow-hidden rounded-lg">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="" class="h-full w-full object-cover object-center">
+    </div>
+
+    <div class="h-64 w-44 overflow-hidden rounded-lg">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="h-full w-full object-cover object-center">
+    </div>
+    <div class="h-64 w-44 overflow-hidden rounded-lg">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="" class="h-full w-full object-cover object-center">
+    </div>
+
+
 <?php get_footer(); ?>
