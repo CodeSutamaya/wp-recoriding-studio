@@ -185,6 +185,44 @@
 
             </form>
 
+            <div id="tabs-1-panel-1" class="space-y-10 px-4 pt-10 pb-8" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
+                <div class="grid grid-cols-2 gap-x-4">
+                    <div class="group relative text-sm">
+                        <div class="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                        <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-cover object-center">
+                        </div>
+                        <a href="#" class="mt-6 block font-medium text-gray-900">
+                        <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                        New Arrivals
+                        </a>
+                        <p aria-hidden="true" class="mt-1">Shop now</p>
+                    </div>
+
+                    <div class="group relative text-sm">
+                        <div class="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                        <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="object-cover object-center">
+                        </div>
+                        <a href="#" class="mt-6 block font-medium text-gray-900">
+                        <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                        Basic Tees
+                        </a>
+                        <p aria-hidden="true" class="mt-1">Shop now</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+                <div class="flex px-4 pt-5 pb-2">
+                <button type="button" class="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400">
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x-mark -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+
         </div>
 
     </div>
